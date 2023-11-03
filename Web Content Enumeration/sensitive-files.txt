@@ -1,2 +1,4 @@
 //app/tmp/healthcheck.json
 /fxa-rp-events
+/config/config.prod.json
+config.prod.json
