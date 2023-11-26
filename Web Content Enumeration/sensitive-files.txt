@@ -2,3 +2,5 @@
 /fxa-rp-events
 /config/config.prod.json
 config.prod.json
+/database.create.json
+/wp-content/debug.log
