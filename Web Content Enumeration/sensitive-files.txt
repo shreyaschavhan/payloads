@@ -4,3 +4,4 @@
 config.prod.json
 /database.create.json
 /wp-content/debug.log
+/auth.json
